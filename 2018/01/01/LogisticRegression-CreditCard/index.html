@@ -40,7 +40,7 @@
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <link href="/gao/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -48,21 +48,21 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+<link href="/gao/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
+<link href="/gao/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.3">
+  <link rel="apple-touch-icon" sizes="180x180" href="/gao/images/apple-touch-icon-next.png?v=5.1.3">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.3">
+  <link rel="icon" type="image/png" sizes="32x32" href="/gao/images/favicon-32x32-next.png?v=5.1.3">
 
 
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+  <link rel="icon" type="image/png" sizes="16x16" href="/gao/images/favicon-16x16-next.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/gao/images/logo.svg?v=5.1.3" color="#222">
 
 
 
@@ -83,30 +83,30 @@
 <meta name="keywords" content="机器学习,编程,python">
 <meta property="og:type" content="article">
 <meta property="og:title" content="逻辑回归学习-以信用卡欺诈检测为例">
-<meta property="og:url" content="http://gaojiawei.gitee.io/2018/01/01/LogisticRegression-CreditCard/index.html">
+<meta property="og:url" content="http://gaojiawei.gitee.io/gao/2018/01/01/LogisticRegression-CreditCard/index.html">
 <meta property="og:site_name" content="JIAWEI">
 <meta property="og:description" content="准备工作  本文为参加唐宇迪博士的课程的学习记录,想要了解更多内容,请到网易云购买唐宇迪博士的python数据分析与机器学习课程. 本文内容是用jupyter notebook运行的,推荐大家使用. 本文的python安装包包为anaconda的python3发行版.    12345import pandas as pdimport matplotlib.pyplot as pltimport">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://gaojiawei.gitee.io/2018/01/01/LogisticRegression-CreditCard/1.png">
-<meta property="og:image" content="http://gaojiawei.gitee.io/2018/01/01/LogisticRegression-CreditCard/output_7_1.png">
-<meta property="og:image" content="http://gaojiawei.gitee.io/2018/01/01/LogisticRegression-CreditCard/2.png">
-<meta property="og:image" content="http://gaojiawei.gitee.io/2018/01/01/LogisticRegression-CreditCard/output_22_1.png">
-<meta property="og:image" content="http://gaojiawei.gitee.io/2018/01/01/LogisticRegression-CreditCard/output_24_1.png">
-<meta property="og:image" content="http://gaojiawei.gitee.io/2018/01/01/LogisticRegression-CreditCard/output_26_1.png">
-<meta property="og:image" content="http://gaojiawei.gitee.io/2018/01/01/LogisticRegression-CreditCard/output_28_1.png">
-<meta property="og:image" content="http://gaojiawei.gitee.io/2018/01/01/LogisticRegression-CreditCard/output_36_1.png">
+<meta property="og:image" content="http://gaojiawei.gitee.io/gao/2018/01/01/LogisticRegression-CreditCard/1.png">
+<meta property="og:image" content="http://gaojiawei.gitee.io/gao/2018/01/01/LogisticRegression-CreditCard/output_7_1.png">
+<meta property="og:image" content="http://gaojiawei.gitee.io/gao/2018/01/01/LogisticRegression-CreditCard/2.png">
+<meta property="og:image" content="http://gaojiawei.gitee.io/gao/2018/01/01/LogisticRegression-CreditCard/output_22_1.png">
+<meta property="og:image" content="http://gaojiawei.gitee.io/gao/2018/01/01/LogisticRegression-CreditCard/output_24_1.png">
+<meta property="og:image" content="http://gaojiawei.gitee.io/gao/2018/01/01/LogisticRegression-CreditCard/output_26_1.png">
+<meta property="og:image" content="http://gaojiawei.gitee.io/gao/2018/01/01/LogisticRegression-CreditCard/output_28_1.png">
+<meta property="og:image" content="http://gaojiawei.gitee.io/gao/2018/01/01/LogisticRegression-CreditCard/output_36_1.png">
 <meta property="og:updated_time" content="2018-01-01T08:53:50.596Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="逻辑回归学习-以信用卡欺诈检测为例">
 <meta name="twitter:description" content="准备工作  本文为参加唐宇迪博士的课程的学习记录,想要了解更多内容,请到网易云购买唐宇迪博士的python数据分析与机器学习课程. 本文内容是用jupyter notebook运行的,推荐大家使用. 本文的python安装包包为anaconda的python3发行版.    12345import pandas as pdimport matplotlib.pyplot as pltimport">
-<meta name="twitter:image" content="http://gaojiawei.gitee.io/2018/01/01/LogisticRegression-CreditCard/1.png">
+<meta name="twitter:image" content="http://gaojiawei.gitee.io/gao/2018/01/01/LogisticRegression-CreditCard/1.png">
 
 
 
 <script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    root: '/',
+    root: '/gao/',
     scheme: 'Mist',
     version: '5.1.3',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
@@ -129,7 +129,7 @@
 
 
 
-  <link rel="canonical" href="http://gaojiawei.gitee.io/2018/01/01/LogisticRegression-CreditCard/"/>
+  <link rel="canonical" href="http://gaojiawei.gitee.io/gao/2018/01/01/LogisticRegression-CreditCard/"/>
 
 
 
@@ -163,7 +163,7 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/gao/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">JIAWEI</span>
         <span class="logo-line-after"><i></i></span>
@@ -191,7 +191,7 @@
       
         
         <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
+          <a href="/gao/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
@@ -201,7 +201,7 @@
       
         
         <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
+          <a href="/gao/about/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
@@ -211,7 +211,7 @@
       
         
         <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
+          <a href="/gao/tags/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
@@ -221,7 +221,7 @@
       
         
         <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
+          <a href="/gao/categories/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
@@ -231,7 +231,7 @@
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
+          <a href="/gao/archives/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
@@ -272,12 +272,12 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://gaojiawei.gitee.io/2018/01/01/LogisticRegression-CreditCard/">
+    <link itemprop="mainEntityOfPage" href="http://gaojiawei.gitee.io/gao/gao/2018/01/01/LogisticRegression-CreditCard/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jiawei">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/upload/image/me.png">
+      <meta itemprop="image" content="/gao/upload/image/me.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -324,7 +324,7 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/编程/" itemprop="url" rel="index">
+                  <a href="/gao/categories/编程/" itemprop="url" rel="index">
                     <span itemprop="name">编程</span>
                   </a>
                 </span>
@@ -371,15 +371,15 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">%matplotlib inline</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
 <h2 id="数据处理"><a href="#数据处理" class="headerlink" title="数据处理"></a>数据处理</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 读取数据</span></span><br><span class="line">data = pd.read_csv(<span class="string">"creditcard.csv"</span>)</span><br><span class="line">data.head()</span><br></pre></td></tr></table></figure>
-<p><img src="/2018/01/01/LogisticRegression-CreditCard/1.png" alt="png"></p>
+<p><img src="/gao/2018/01/01/LogisticRegression-CreditCard/1.png" alt="png"></p>
 <h3 id="统计数据样本分布是否均衡"><a href="#统计数据样本分布是否均衡" class="headerlink" title="统计数据样本分布是否均衡"></a>统计数据样本分布是否均衡</h3><h4 id="下采样"><a href="#下采样" class="headerlink" title="下采样"></a>下采样</h4><p>两个样本数据不匹配，所以我们要想办法使得两种样本数量一样，下采样是指让两种样本数量一样多。</p>
 <h4 id="上采样"><a href="#上采样" class="headerlink" title="上采样"></a>上采样</h4><p>上采样是让两种样本数量一样多，向最多的看齐。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">count_classes = pd.value_counts(data[<span class="string">'Class'</span>], sort = <span class="keyword">True</span>).sort_index()</span><br><span class="line">count_classes.plot(kind = <span class="string">'bar'</span>)</span><br><span class="line">plt.title(<span class="string">"Fraud class histogram"</span>)</span><br><span class="line">plt.xlabel(<span class="string">"Class"</span>)</span><br><span class="line">plt.ylabel(<span class="string">"Frequency"</span>)</span><br></pre></td></tr></table></figure>
 <pre><code>Text(0,0.5,&apos;Frequency&apos;)
-</code></pre><p><img src="/2018/01/01/LogisticRegression-CreditCard/output_7_1.png" alt="png"></p>
+</code></pre><p><img src="/gao/2018/01/01/LogisticRegression-CreditCard/output_7_1.png" alt="png"></p>
 <h3 id="处理权重数据"><a href="#处理权重数据" class="headerlink" title="处理权重数据"></a>处理权重数据</h3><p>我们发现有一列数据异常的大，在机器学习的时候，它会容易认为大的数据的权重更大，所以我们要将其统一。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#sklearn.preprocessing 是sklearn包中的一个用于数据预处理的模块，standardscaler是一个数据标准化的模块。</span></span><br><span class="line"><span class="keyword">from</span> sklearn.preprocessing <span class="keyword">import</span> StandardScaler</span><br><span class="line"></span><br><span class="line"><span class="comment">#DataFrame.reshape将数据变为一个列向量，其中-1是自动，1是后面的一位==》变为n*1。</span></span><br><span class="line">data[<span class="string">'normAmount'</span>] = StandardScaler().fit_transform(data[<span class="string">'Amount'</span>].values.reshape(<span class="number">-1</span>, <span class="number">1</span>))</span><br><span class="line">data = data.drop([<span class="string">'Time'</span>,<span class="string">'Amount'</span>],axis=<span class="number">1</span>)</span><br><span class="line">data.head()</span><br></pre></td></tr></table></figure>
-<p><img src="/2018/01/01/LogisticRegression-CreditCard/2.png" alt="png"></p>
+<p><img src="/gao/2018/01/01/LogisticRegression-CreditCard/2.png" alt="png"></p>
 <h4 id="下采样-1"><a href="#下采样-1" class="headerlink" title="下采样"></a>下采样</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># X取出所有的数据，取出结果，Y取出结果。</span></span><br><span class="line">X = data.iloc[:, data.columns != <span class="string">'Class'</span>]</span><br><span class="line">y = data.iloc[:, data.columns == <span class="string">'Class'</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment"># Number of data points in the minority class</span></span><br><span class="line"><span class="comment"># data.calss == 1是一个列表，它又可以作为一个索引，把结果为true的数据都取出来。</span></span><br><span class="line">number_records_fraud = len(data[data.Class == <span class="number">1</span>])</span><br><span class="line">fraud_indices = np.array(data[data.Class == <span class="number">1</span>].index)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Picking the indices of the normal classes</span></span><br><span class="line">normal_indices = data[data.Class == <span class="number">0</span>].index</span><br><span class="line"></span><br><span class="line"><span class="comment"># Out of the indices we picked, randomly select "x" number (number_records_fraud)</span></span><br><span class="line"><span class="comment"># 随机选取（选取的东西，数量，是否代替）</span></span><br><span class="line">random_normal_indices = np.random.choice(normal_indices, number_records_fraud, replace = <span class="keyword">False</span>)</span><br><span class="line">random_normal_indices = np.array(random_normal_indices)</span><br><span class="line"><span class="comment"># 之所以将其都转换为np.array格式是为了后面的合并操作</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Appending the 2 indices</span></span><br><span class="line">under_sample_indices = np.concatenate([fraud_indices,random_normal_indices])</span><br><span class="line"></span><br><span class="line"><span class="comment"># Under sample dataset</span></span><br><span class="line">under_sample_data = data.iloc[under_sample_indices,:]</span><br><span class="line"></span><br><span class="line">X_undersample = under_sample_data.iloc[:, under_sample_data.columns != <span class="string">'Class'</span>]</span><br><span class="line">y_undersample = under_sample_data.iloc[:, under_sample_data.columns == <span class="string">'Class'</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment"># Showing ratio</span></span><br><span class="line">print(<span class="string">"Percentage of normal transactions: "</span>, len(under_sample_data[under_sample_data.Class == <span class="number">0</span>])/len(under_sample_data))</span><br><span class="line">print(<span class="string">"Percentage of fraud transactions: "</span>, len(under_sample_data[under_sample_data.Class == <span class="number">1</span>])/len(under_sample_data))</span><br><span class="line">print(<span class="string">"Total number of transactions in resampled data: "</span>, len(under_sample_data))</span><br></pre></td></tr></table></figure>
 <pre><code>Percentage of normal transactions:  0.5
 Percentage of fraud transactions:  0.5
@@ -465,11 +465,11 @@ Best model to choose from cross validation is with C parameter =  0.01
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> itertools</span><br><span class="line">lr = LogisticRegression(C = best_c, penalty = <span class="string">'l1'</span>)</span><br><span class="line">lr.fit(X_train_undersample,y_train_undersample.values.ravel())</span><br><span class="line">y_pred_undersample = lr.predict(X_test_undersample.values)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Compute confusion matrix</span></span><br><span class="line">cnf_matrix = confusion_matrix(y_test_undersample,y_pred_undersample)</span><br><span class="line">np.set_printoptions(precision=<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">print(<span class="string">"Recall metric in the testing dataset: "</span>, cnf_matrix[<span class="number">1</span>,<span class="number">1</span>]/(cnf_matrix[<span class="number">1</span>,<span class="number">0</span>]+cnf_matrix[<span class="number">1</span>,<span class="number">1</span>]))</span><br><span class="line"></span><br><span class="line"><span class="comment"># Plot non-normalized confusion matrix</span></span><br><span class="line">class_names = [<span class="number">0</span>,<span class="number">1</span>]</span><br><span class="line">plt.figure()</span><br><span class="line">plot_confusion_matrix(cnf_matrix</span><br><span class="line">                      , classes=class_names</span><br><span class="line">                      , title=<span class="string">'Confusion matrix'</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
 <pre><code>Recall metric in the testing dataset:  0.931972789116
 </code></pre><p>​    </p>
-<p><img src="/2018/01/01/LogisticRegression-CreditCard/output_22_1.png" alt="png"></p>
+<p><img src="/gao/2018/01/01/LogisticRegression-CreditCard/output_22_1.png" alt="png"></p>
 <h3 id="用元数据来检验"><a href="#用元数据来检验" class="headerlink" title="用元数据来检验"></a>用元数据来检验</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">lr = LogisticRegression(C = best_c, penalty = <span class="string">'l1'</span>)</span><br><span class="line">lr.fit(X_train_undersample,y_train_undersample.values.ravel())</span><br><span class="line">y_pred = lr.predict(X_test.values)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Compute confusion matrix</span></span><br><span class="line">cnf_matrix = confusion_matrix(y_test,y_pred)</span><br><span class="line">np.set_printoptions(precision=<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">print(<span class="string">"Recall metric in the testing dataset: "</span>, cnf_matrix[<span class="number">1</span>,<span class="number">1</span>]/(cnf_matrix[<span class="number">1</span>,<span class="number">0</span>]+cnf_matrix[<span class="number">1</span>,<span class="number">1</span>]))</span><br><span class="line"></span><br><span class="line"><span class="comment"># Plot non-normalized confusion matrix</span></span><br><span class="line">class_names = [<span class="number">0</span>,<span class="number">1</span>]</span><br><span class="line">plt.figure()</span><br><span class="line">plot_confusion_matrix(cnf_matrix</span><br><span class="line">                      , classes=class_names</span><br><span class="line">                      , title=<span class="string">'Confusion matrix'</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
 <pre><code>Recall metric in the testing dataset:  0.918367346939
 </code></pre><p>​    </p>
-<p><img src="/2018/01/01/LogisticRegression-CreditCard/output_24_1.png" alt="png"></p>
+<p><img src="/gao/2018/01/01/LogisticRegression-CreditCard/output_24_1.png" alt="png"></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">best_c = printing_Kfold_scores(X_train,y_train)</span><br></pre></td></tr></table></figure>
 <pre><code>-------------------------------------------
 C parameter:  0.01
@@ -537,7 +537,7 @@ Best model to choose from cross validation is with C parameter =  10.0
 </code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">lr = LogisticRegression(C = best_c, penalty = <span class="string">'l1'</span>)</span><br><span class="line">lr.fit(X_train,y_train.values.ravel())</span><br><span class="line">y_pred_undersample = lr.predict(X_test.values)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Compute confusion matrix</span></span><br><span class="line">cnf_matrix = confusion_matrix(y_test,y_pred_undersample)</span><br><span class="line">np.set_printoptions(precision=<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">print(<span class="string">"Recall metric in the testing dataset: "</span>, cnf_matrix[<span class="number">1</span>,<span class="number">1</span>]/(cnf_matrix[<span class="number">1</span>,<span class="number">0</span>]+cnf_matrix[<span class="number">1</span>,<span class="number">1</span>]))</span><br><span class="line"></span><br><span class="line"><span class="comment"># Plot non-normalized confusion matrix</span></span><br><span class="line">class_names = [<span class="number">0</span>,<span class="number">1</span>]</span><br><span class="line">plt.figure()</span><br><span class="line">plot_confusion_matrix(cnf_matrix</span><br><span class="line">                      , classes=class_names</span><br><span class="line">                      , title=<span class="string">'Confusion matrix'</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
 <pre><code>Recall metric in the testing dataset:  0.619047619048
 </code></pre><p>​    </p>
-<p><img src="/2018/01/01/LogisticRegression-CreditCard/output_26_1.png" alt="png"></p>
+<p><img src="/gao/2018/01/01/LogisticRegression-CreditCard/output_26_1.png" alt="png"></p>
 <h3 id="逻辑回归阈值调整"><a href="#逻辑回归阈值调整" class="headerlink" title="逻辑回归阈值调整"></a>逻辑回归阈值调整</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">lr = LogisticRegression(C = <span class="number">0.01</span>, penalty = <span class="string">'l1'</span>)</span><br><span class="line">lr.fit(X_train_undersample,y_train_undersample.values.ravel())</span><br><span class="line">y_pred_undersample_proba = lr.predict_proba(X_test_undersample.values)</span><br><span class="line"></span><br><span class="line">thresholds = [<span class="number">0.1</span>,<span class="number">0.2</span>,<span class="number">0.3</span>,<span class="number">0.4</span>,<span class="number">0.5</span>,<span class="number">0.6</span>,<span class="number">0.7</span>,<span class="number">0.8</span>,<span class="number">0.9</span>]</span><br><span class="line"></span><br><span class="line">plt.figure(figsize=(<span class="number">10</span>,<span class="number">10</span>))</span><br><span class="line"></span><br><span class="line">j = <span class="number">1</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> thresholds:</span><br><span class="line">    y_test_predictions_high_recall = y_pred_undersample_proba[:,<span class="number">1</span>] &gt; i</span><br><span class="line">    </span><br><span class="line">    plt.subplot(<span class="number">3</span>,<span class="number">3</span>,j)</span><br><span class="line">    j += <span class="number">1</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment"># Compute confusion matrix</span></span><br><span class="line">    cnf_matrix = confusion_matrix(y_test_undersample,y_test_predictions_high_recall)</span><br><span class="line">    np.set_printoptions(precision=<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">    print(<span class="string">"Recall metric in the testing dataset: "</span>, cnf_matrix[<span class="number">1</span>,<span class="number">1</span>]/(cnf_matrix[<span class="number">1</span>,<span class="number">0</span>]+cnf_matrix[<span class="number">1</span>,<span class="number">1</span>]))</span><br><span class="line"></span><br><span class="line">    <span class="comment"># Plot non-normalized confusion matrix</span></span><br><span class="line">    class_names = [<span class="number">0</span>,<span class="number">1</span>]</span><br><span class="line">    plot_confusion_matrix(cnf_matrix</span><br><span class="line">                          , classes=class_names</span><br><span class="line">                          , title=<span class="string">'Threshold &gt;= %s'</span>%i)</span><br></pre></td></tr></table></figure>
 <pre><code>Recall metric in the testing dataset:  1.0
 Recall metric in the testing dataset:  1.0
@@ -548,7 +548,7 @@ Recall metric in the testing dataset:  0.884353741497
 Recall metric in the testing dataset:  0.829931972789
 Recall metric in the testing dataset:  0.775510204082
 Recall metric in the testing dataset:  0.591836734694
-</code></pre><p><img src="/2018/01/01/LogisticRegression-CreditCard/output_28_1.png" alt="png"></p>
+</code></pre><p><img src="/gao/2018/01/01/LogisticRegression-CreditCard/output_28_1.png" alt="png"></p>
 <h2 id="过采样"><a href="#过采样" class="headerlink" title="过采样"></a>过采样</h2><h3 id="包的导入"><a href="#包的导入" class="headerlink" title="包的导入"></a>包的导入</h3><h3 id="smote算法"><a href="#smote算法" class="headerlink" title="smote算法"></a>smote算法</h3><ul>
 <li>简而言之,smote算法就是指将某个点与其周围所有的同类的点的距离都算出来,之后将这个距离乘上一个零到一之间的数.</li>
 <li>根据样本不均衡情况设定一个采样比例N,对于每一个少数类样本x,从其k近邻中随机选取若干个样本,假设选的的近邻为xn</li>
@@ -628,7 +628,7 @@ Best model to choose from cross validation is with C parameter =  1.0
 </code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">lr = LogisticRegression(C = best_c, penalty = <span class="string">'l1'</span>)</span><br><span class="line">lr.fit(os_features,os_labels.values.ravel())</span><br><span class="line">y_pred = lr.predict(features_test.values)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Compute confusion matrix</span></span><br><span class="line">cnf_matrix = confusion_matrix(labels_test,y_pred)</span><br><span class="line">np.set_printoptions(precision=<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">print(<span class="string">"Recall metric in the testing dataset: "</span>, cnf_matrix[<span class="number">1</span>,<span class="number">1</span>]/(cnf_matrix[<span class="number">1</span>,<span class="number">0</span>]+cnf_matrix[<span class="number">1</span>,<span class="number">1</span>]))</span><br><span class="line"></span><br><span class="line"><span class="comment"># Plot non-normalized confusion matrix</span></span><br><span class="line">class_names = [<span class="number">0</span>,<span class="number">1</span>]</span><br><span class="line">plt.figure()</span><br><span class="line">plot_confusion_matrix(cnf_matrix</span><br><span class="line">                      , classes=class_names</span><br><span class="line">                      , title=<span class="string">'Confusion matrix'</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
 <pre><code>Recall metric in the testing dataset:  0.910891089109
 </code></pre><p>​    </p>
-<p><img src="/2018/01/01/LogisticRegression-CreditCard/output_36_1.png" alt="png"></p>
+<p><img src="/gao/2018/01/01/LogisticRegression-CreditCard/output_36_1.png" alt="png"></p>
 
       
     </div>
@@ -646,11 +646,11 @@ Best model to choose from cross validation is with C parameter =  1.0
       
         <div class="post-tags">
           
-            <a href="/tags/机器学习/" rel="tag"># 机器学习</a>
+            <a href="/gao/tags/机器学习/" rel="tag"># 机器学习</a>
           
-            <a href="/tags/编程/" rel="tag"># 编程</a>
+            <a href="/gao/tags/编程/" rel="tag"># 编程</a>
           
-            <a href="/tags/python/" rel="tag"># python</a>
+            <a href="/gao/tags/python/" rel="tag"># python</a>
           
         </div>
       
@@ -663,7 +663,7 @@ Best model to choose from cross validation is with C parameter =  1.0
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/01/01/沉思录1/" rel="next" title="《沉思录》卷二-摘录(1)">
+              <a href="/gao/2018/01/01/沉思录1/" rel="next" title="《沉思录》卷二-摘录(1)">
                 <i class="fa fa-chevron-left"></i> 《沉思录》卷二-摘录(1)
               </a>
             
@@ -673,7 +673,7 @@ Best model to choose from cross validation is with C parameter =  1.0
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/01/30/导读系列-介绍/" rel="prev" title="导读系列-介绍">
+              <a href="/gao/2018/01/30/导读系列-介绍/" rel="prev" title="导读系列-介绍">
                 导读系列-介绍 <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -742,7 +742,7 @@ Best model to choose from cross validation is with C parameter =  1.0
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <img class="site-author-image" itemprop="image"
-                src="/upload/image/me.png"
+                src="/gao/upload/image/me.png"
                 alt="Jiawei" />
             
               <p class="site-author-name" itemprop="name">Jiawei</p>
@@ -754,7 +754,7 @@ Best model to choose from cross validation is with C parameter =  1.0
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives/">
+                <a href="/gao/archives/">
               
                   <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">日志</span>
@@ -766,7 +766,7 @@ Best model to choose from cross validation is with C parameter =  1.0
               
               
               <div class="site-state-item site-state-categories">
-                <a href="/categories/index.html">
+                <a href="/gao/categories/index.html">
                   <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
@@ -777,7 +777,7 @@ Best model to choose from cross validation is with C parameter =  1.0
               
               
               <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
+                <a href="/gao/tags/index.html">
                   <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
@@ -819,7 +819,7 @@ Best model to choose from cross validation is with C parameter =  1.0
     <h3 class="widget-title">Tag Cloud</h3>
     <div id="myCanvasContainer" class="widget tagcloud">
         <canvas width="250" height="250" id="resCanvas" style="width=100%">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">python</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/《庄子》/">《庄子》</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/《沉思录》/">《沉思录》</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/导读系列/">导读系列</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/机器学习/">机器学习</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/编程/">编程</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/读书/">读书</a><span class="tag-list-count">4</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/gao/tags/python/">python</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/gao/tags/《庄子》/">《庄子》</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/gao/tags/《沉思录》/">《沉思录》</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/gao/tags/导读系列/">导读系列</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/gao/tags/机器学习/">机器学习</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/gao/tags/编程/">编程</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/gao/tags/读书/">读书</a><span class="tag-list-count">4</span></li></ul>
         </canvas>
     </div>
 </div>
@@ -935,57 +935,57 @@ Best model to choose from cross validation is with C parameter =  1.0
 
   
   
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+    <script type="text/javascript" src="/gao/lib/jquery/index.js?v=2.1.3"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+    <script type="text/javascript" src="/gao/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+    <script type="text/javascript" src="/gao/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+    <script type="text/javascript" src="/gao/lib/velocity/velocity.min.js?v=1.2.1"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+    <script type="text/javascript" src="/gao/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <script type="text/javascript" src="/gao/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
-
-
-
-  
-  
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
-
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+  <script type="text/javascript" src="/gao/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/gao/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/gao/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/gao/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/gao/js/src/bootstrap.js?v=5.1.3"></script>
 
 
 
